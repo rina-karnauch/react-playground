@@ -36,7 +36,6 @@
 .expense-adder input{
     font-family: 'Bebas Neue', cursive;
     font-size:15px;
-    width:80px;
     color:#4e4e4e;
     background-color: #7d9aa8;
     border:1px solid #718c9c;
@@ -46,4 +45,30 @@
 
 .expense-adder input[text]{
     color: #424242;
+}
+
+.expense-adder button{
+    font-family: 'Bebas Neue', cursive;
+    font-size:15px;
+    color:#496572;
+    letter-spacing: 2px;
+    margin-top:10px;
+    background:none;
+    padding:5px;
+    width:100px;
+    border:1px solid #496572;
+    transition: all 0.5s ease;
+}
+
+.expense-adder button:hover{
+    font-family: 'Bebas Neue', cursive;
+    font-size:15px;
+    color: #bbc9d0;
+    letter-spacing: 2px;
+    margin-top:10px;
+    padding:5px;
+    width:100px;
+    background-color: #6b8592;
+    border:1px solid #3d596a;
+    transition: all 0.5s ease;
 }

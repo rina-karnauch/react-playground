@@ -1,32 +1,35 @@
 import ExpenseItem from "./ExpenseItem";
-import Grid from '@material-ui/core/Grid';
 import './Expenses.css';
-import { Container, Row, Col } from 'reactstrap';
+import ExpenseAdder from "./ExpenseAdder";
+import React from "react";
 
 
 function Expenses(props) {
+
+    // communicating up
+    const saveExpenseDataHandler = (enteredExpenseData) => {
+        const expenseDate = {
+            ...enteredExpenseData
+        }
+        props.onAddExpense(expenseDate);
+    }
+
+    // communicating up
+
+
     return (
-        <div className="expenses">
-                <ExpenseItem
-                    title={props.expenses[0].title}
-                    amount={props.expenses[0].amount}
-                    date={props.expenses[0].date}
-                />
-                <ExpenseItem
-                    title={props.expenses[1].title}
-                    amount={props.expenses[1].amount}
-                    date={props.expenses[1].date}
-                />
-                <ExpenseItem
-                    title={props.expenses[2].title}
-                    amount={props.expenses[2].amount}
-                    date={props.expenses[2].date}
-                />
-                <ExpenseItem
-                    title={props.expenses[3].title}
-                    amount={props.expenses[3].amount}
-                    date={props.expenses[3].date}
-                />
+        <div>
+            <div className="expenses">
+                {props.expenses.map(
+                    expense => <ExpenseItem
+                        title={expense.title}
+                        amount={expense.amount}
+                        date={expense.date}
+                    />
+                )}
+            </div>
+            <ExpenseAdder onSaveExpenseData={saveExpenseDataHandler} expenses={props.expenses}>
+            </ExpenseAdder>
         </div>
     );
 }
