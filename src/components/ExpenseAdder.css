@@ -1,0 +1,49 @@
+
+.expense-adder{
+    width:250px;
+    color: #4e4e4e;
+    background-color: #93a8b4;
+    margin: 30px auto 2px;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #aac2d0;
+
+    font-family: 'Bebas Neue', cursive;
+    font-size:18px;
+}
+
+.new-expense-value{
+    margin:5px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.adder-title{
+    font-family: 'Bebas Neue', cursive;
+    font-size:20px;
+    margin-bottom:10px;
+    border:1px solid #6389a0;
+    background-color: #aac2d0;
+    width:70%;
+    color: #7292a5;
+    padding-bottom:2px;
+    padding-top:4px;
+    margin-left: -22px;
+}
+
+
+.expense-adder input{
+    font-family: 'Bebas Neue', cursive;
+    font-size:15px;
+    width:80px;
+    color:#4e4e4e;
+    background-color: #7d9aa8;
+    border:1px solid #718c9c;
+    border-radius: 5px;
+    margin: 2px 2px 2px 5px;
+}
+
+.expense-adder input[text]{
+    color: #424242;
+}

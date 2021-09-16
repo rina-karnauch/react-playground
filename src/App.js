@@ -1,6 +1,7 @@
 
 import Expenses from './components/Expenses';
 import './App.css';
+import ExpenseAdder from "./components/ExpenseAdder";
 
 function App() {
 
@@ -28,8 +29,13 @@ function App() {
 
   return (
     <div className="App">
+      <div className="site-title">
+        expense manger
+      </div>
       <Expenses expenses={expenses}>
       </Expenses>
+      <ExpenseAdder expenses={expenses}>
+      </ExpenseAdder>
     </div>
   );
 }

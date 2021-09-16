@@ -1,4 +1,8 @@
 
 .expenses{
+    width:75%;
     margin: 0 auto;
+    display:grid;
+    gap:10px 40px;
+    grid-template-columns: repeat(2, 5fr);
 }

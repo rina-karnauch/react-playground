@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,500&display=swap');
+
 
 .expense-card{
-    /* width:200px; */
+    /*font-family: 'Bebas Neue', cursive;*/
+    width:100%;
     border:1px solid #d3d3d3;
     background-color: #e4e4e4;
-    margin:10px;
-    /* margin-top:0px; */
+    margin: 5px auto 0;
     padding:7px;
+    border-radius:10px;
 }
 
 
@@ -20,24 +23,28 @@
 }
 
 .expense-card h2{
-    margin:0px;
-    font-size:18px;
+    margin:0;
+    font-family: 'Bebas Neue', cursive;
+    font-size:20px;
     color:#5a5a5a;
 }
 
 .expense-card-date{
     margin:5px;
     font-size:14px;
-    color:#6e6e6e;
+    font-family: 'Montserrat', sans-serif;
+    color: #343434;
 }
 
-.expense-card-price{ 
+.expense-card-price{
+    font-family: 'Bebas Neue', cursive;
     font-weight: bold;
-    font-size:12px;
+    font-size:15px;
+    letter-spacing: 1px;
     color: white;
     margin:0 auto;
     width:100px;
-    background-color: #ccb0da;
-    border:1px solid #c8acd6;
+    background-color: #93a8b4;
+    border:1px solid #5f7684;
     padding: 0.3rem;
 }
